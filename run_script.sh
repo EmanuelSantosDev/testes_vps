@@ -14,3 +14,5 @@ scrapy crawl proxyscraper -o dados.csv
 
 # Desativação do ambiente virtual
 deactivate
+
+# chmod +x run_script.sh

@@ -1,10 +1,16 @@
 #!/bin/bash
 
+# Entrando no diretório do projeto
+cd testes_vps
+
 # Ativação do ambiente virtual
-source /caminho/para/o/seu/ambiente/virtual/venv/bin/activate
+source ambiente_virtual/bin/activate
+
+# Entrando no diretório da spider
+cd varredor_de_sites
 
 # Execução do script Python
-python3 /caminho/para/o/seu/script/meu_script.py
+scrapy crawl proxyscraper -o dados.csv
 
 # Desativação do ambiente virtual
 deactivate
